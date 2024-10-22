@@ -1,0 +1,28 @@
+
+.outline{
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100PX 200PX;
+    grid-auto-rows: 200PX;
+    gap:20px;
+}
+
+.box{
+    background-color: crimson;
+    color: white;
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column:span 3;
+}
+
+.box2{
+    grid-row:span 2;
+}
